@@ -22,6 +22,20 @@ namespace almaOOP
             gyumolcsok.Add(g);
             gyumolcsok.Add(a);
 
+
+            int almae = 0;
+            int nemAlma = 0;
+
+            foreach (var item in gyumolcsok)
+            {
+                if (item is alma)
+                    almae++;
+                else
+                    nemAlma++;
+            }
+
+            Console.WriteLine($"Alma: {nemAlma}");
+            Console.WriteLine($"Nem alma: {almae}");
         }
     }
 }
