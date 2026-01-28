@@ -21,9 +21,9 @@ namespace almaOOP
             this.fajta = fajta;
         }
 
-        public override string ToString()
+        public virtual string Leiras()
         {
-            return $"Gyümölocs neve?: {nev}, Szyne: {szin}, súlya: {suly}g, Fajta: {fajta}";
+            return $"Gyümölcs neve: {nev}, Színe: {szin}, Súlya: {suly}g, Fajta: {fajta}";
         }
 
     }

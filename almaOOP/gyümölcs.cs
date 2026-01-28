@@ -12,22 +12,22 @@ namespace almaOOP
         {
             public string nev;
             public string szin;
-            public string suly;
+            public double suly;
 
             public Gyümölcs()
             {
             }
 
-            public Gyümölcs(string nev, string szin, string suly)
+            public Gyümölcs(string nev, string szin, double suly)
             {
                 this.nev = nev;
                 this.szin = szin;
                 this.suly = suly;
             }
 
-            public override string ToString()
+            public virtual string Leiras()
             {
-                return $"Gyümölocs neve?: {nev}, Szyne: {szin}, súlya: {suly}g";
+                return $"Gyümölcs neve: {nev}, Színe: {szin}, Súlya: {suly}g";
             }
         }
     }
